@@ -75,6 +75,22 @@ proxies:
       headers:
         Host: sg4.6n6.net
     udp: true
+  - name: AKUN4
+    server: edu.ruangguru.com
+    port: 80
+    type: vmess
+    uuid: 2818be70-ba98-11f0-b238-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-1.hihu.net
+    network: ws
+    ws-opts:
+      path: /rh0nm48e
+      headers:
+        Host: sg-1.hihu.net
+    udp: true
 
 proxy-groups:
   - name: ID-X
@@ -85,6 +101,7 @@ proxy-groups:
       - jagoanssh-Kaleaaa
       - jagoanssh-Kaleaaaa
       - bug.com
+      - AKUN4
 
   - name: MIX-X
     type: fallback
@@ -94,6 +111,7 @@ proxy-groups:
       - jagoanssh-Kaleaaa
       - jagoanssh-Kaleaaaa
       - bug.com
+      - AKUN4
       
   - name: IKLAN
     type: select
@@ -102,7 +120,7 @@ proxy-groups:
      - REJECT
 
   - name: GAME
-    type: select
+    type: fallback
     proxies:
      - ID-X
      - DIRECT
@@ -164,4 +182,5 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
