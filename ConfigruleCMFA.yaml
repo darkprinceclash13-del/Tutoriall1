@@ -120,7 +120,7 @@ proxy-groups:
      - REJECT
 
   - name: GAME
-    type: fallback
+    type: select
     proxies:
      - ID-X
      - DIRECT
@@ -182,5 +182,6 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
