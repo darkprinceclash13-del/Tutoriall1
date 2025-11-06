@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254
 proxies:
   - name: jagoanssh-Kaleaaa
-    server: edu.ruangguru.com
+    server: io.ruangguru.com
     port: 443
     type: vless
     uuid: 99df898a-07f5-4c2d-8dfb-0d9e3625ddd2
@@ -48,7 +48,7 @@ proxies:
         Host: id1vless.ipservers.xyz
     udp: true
   - name: jagoanssh-Kaleaaaa
-    server: edu.ruangguru.com
+    server: layanan.ruangguru.com
     port: 443
     type: vless
     uuid: f0ee0193-5cf0-4827-8ed5-7d5031bff8ec
@@ -63,7 +63,7 @@ proxies:
         Host: id2vless.ipservers.xyz
     udp: true
   - name: bug.com
-    server: edu.ruangguru.com
+    server: io.ruangguru.com
     port: 443
     type: trojan
     password: 9f5c2600-ba4c-11f0-8aff-1239d0255272
@@ -76,7 +76,7 @@ proxies:
         Host: sg4.6n6.net
     udp: true
   - name: AKUN4
-    server: edu.ruangguru.com
+    server: 104.17.74.108
     port: 80
     type: vmess
     uuid: 2818be70-ba98-11f0-b238-205c6d5f5d78
@@ -182,6 +182,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
