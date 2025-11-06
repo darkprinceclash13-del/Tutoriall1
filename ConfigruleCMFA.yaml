@@ -76,7 +76,7 @@ proxies:
         Host: sg4.6n6.net
     udp: true
   - name: AKUN4
-    server: 104.17.74.108
+    server: io.ruangguru.com
     port: 80
     type: vmess
     uuid: 2818be70-ba98-11f0-b238-205c6d5f5d78
@@ -182,6 +182,7 @@ rule-providers:
     type: file
     behavior: domain
     path: ./block.yaml  
+
 
 
 
